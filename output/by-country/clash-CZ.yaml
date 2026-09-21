@@ -5,37 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.21.76.194
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 172.67.143.94
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: Z6Y-dAOx0HYhdTdy.R720KPbYX2L3i406.woRKers.DEV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/P9UvWEJwKNGrOjrb1ICnWGhH8iQGDcG?ed=2560
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 153.76.185.189
-  port: 3090
+  server: 172.66.44.124
+  port: 2096
   udp: true
   type: vless
-  uuid: 5ebdc9ee-8b41-4487-93af-231cb0b47d60
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /9BozNyvQ8VdRvsYX?ed=2560
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: chatgpt.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: a43a9a45-7387-4faf-ad06-24b1ae181fdc
+  tls: true
+  servername: snowy-glade-85fa.arshiatakalloo88.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: snowy-glade-85fa.arshiatakalloo88.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -46,7 +45,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +54,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +62,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES

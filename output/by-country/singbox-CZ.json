@@ -4,71 +4,57 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.21.76.194",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
+      "server": "172.66.44.124",
+      "server_port": 2096,
+      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
       "tls": {
         "enabled": true,
-        "server_name": "X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV",
+        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "randomized"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed",
+        "path": "/9BozNyvQ8VdRvsYX?ed=2560",
         "headers": {
-          "Host": "x8xus4x7utzmdozv2.bzuh25lzinnetwtocxyicx.workers.dev"
+          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "172.67.143.94",
+      "server": "chatgpt.com",
       "server_port": 443,
-      "password": "Telegram_healer_config",
+      "uuid": "a43a9a45-7387-4faf-ad06-24b1ae181fdc",
       "tls": {
         "enabled": true,
-        "server_name": "Z6Y-dAOx0HYhdTdy.R720KPbYX2L3i406.woRKers.DEV",
+        "server_name": "snowy-glade-85fa.arshiatakalloo88.workers.dev",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/P9UvWEJwKNGrOjrb1ICnWGhH8iQGDcG?ed=2560",
+        "path": "/eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
         "headers": {
-          "Host": "z6y-daox0hyhdtdy.r720kpbyx2l3i406.workers.dev"
+          "Host": "snowy-glade-85fa.arshiatakalloo88.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "153.76.185.189",
-      "server_port": 3090,
-      "uuid": "5ebdc9ee-8b41-4487-93af-231cb0b47d60",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
       "server": "95.85.230.35",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -78,7 +64,7 @@
         "server_name": "de.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -94,8 +80,7 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe"
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ]
     },
     {
@@ -104,8 +89,7 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe"
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
