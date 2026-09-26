@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  tls: true
+  servername: courses.mftplus.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: courses.mftplus.qzz.io
+- name: 🇮🇶 IQ 02 - xiaohe
   server: 193.56.135.212
   port: 9543
   udp: true
@@ -17,7 +31,7 @@ proxies:
     short-id: 123abcde
   servername: storage.yandexcloud.net
   client-fingerprint: chrome
-- name: 🇮🇶 IQ 02 - xiaohe
+- name: 🇮🇶 IQ 03 - xiaohe
   server: 193.56.135.137
   port: 9543
   udp: true
@@ -37,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
   - 🇮🇶 IQ 02 - xiaohe
+  - 🇮🇶 IQ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
   - 🇮🇶 IQ 02 - xiaohe
+  - 🇮🇶 IQ 03 - xiaohe
 rules:
 - MATCH,PROXIES
