@@ -6,28 +6,114 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "hikvision-plus.com",
-      "server_port": 2052,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
+      "server": "104.16.10.2",
+      "server_port": 443,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "path": "/ws",
         "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
+          "Host": "v2ray.simspeedup.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "hikvision-plus.com",
-      "server_port": 2052,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "server": "104.16.10.2",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "path": "/ws",
         "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
+          "Host": "a.cwvps.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "104.16.10.2",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 04 - xiaohe",
+      "server": "104.16.72.2",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 05 - xiaohe",
+      "server": "104.16.72.2",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 06 - xiaohe",
+      "server": "104.16.72.2",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -37,7 +123,11 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe",
+        "🌐 其他地区 (Other) 05 - xiaohe",
+        "🌐 其他地区 (Other) 06 - xiaohe"
       ]
     },
     {
@@ -45,7 +135,11 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe",
+        "🌐 其他地区 (Other) 05 - xiaohe",
+        "🌐 其他地区 (Other) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
